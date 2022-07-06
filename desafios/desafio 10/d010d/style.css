@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+
+
+@font-face {
+    font-family: 'CalignaDEMO';
+    src: url(/fontes/CalignaDEMO.ttf) format(truetype);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@100&display=swap');
+
+:root {
+    --cor0: #006115;
+    --cor1: #b9f5c6;
+    --cor2: #00E031;
+    --cor3: #76d48a;
+    --cor4: #00AD26;
+
+    --font-padrao: 'CalignaDEMO', cursive;
+    --font-destaque: 'Sarabun', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor1);
+}
+
+header {
+    background-color: var(--cor3);
+    background-image: linear-gradient(to top, #3ed65f, #02721a);
+
+    padding-top: 30px;
+}
+
+.cabecalho {
+    padding-bottom: 90px;
+}
+
+header > h1 {
+    font-family: var(--font-padrao);
+    font-weight: normal;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header > p {
+    font-family: var(--font-padrao);
+    font-weight: bolder;
+    color: white;
+
+    text-align: center;
+}
+
+nav a {
+    font-family: var(--font-destaque);
+    margin: 5px;
+    text-decoration: none;
+    color: var(--cor1);
+    background-color: #02721a;
+}
+
+nav {
+    background-color: var(--cor3);
+    background-image: linear-gradient(to bottom, #3ed65f, #02721a);
+    
+    
+    padding-top: 10px;
+    
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+article h1, h2 {
+    font-family: var(--font-padrao);
+    font-weight: bold;
+}
+
+article p {
+    font-family: var(--font-destaque);
+}
+

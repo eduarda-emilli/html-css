@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        body{
+            font: bold 1em Arial, Helvetica, sans-serif;
+            background-color: #f3b76f;
+        }
+        
+        a {
+            text-decoration: none;
+            color: rgb(22, 56, 56);
+        }
+
+        .especial:hover {
+            color: white;
+            background-color: #666666;
+        }
+
+        .seta::before {
+            content: '→';
+        }
+
+        .seta::after {
+            content: '←';
+        }
+
+        .especial:hover {
+            color: violet;
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    <h1>Personalizando um link</h1>
+    <div class="01">
+    <p>Para aprender HTML5 e CSS3, acesse o <a href="https://github.com/gustavoguanabara/html-css" target="_blank" class="especial">Reposítorio do GitHub</a></p>
+    <p>Para acompanhar o curso, acesse <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-04-pseudo-elementos-em-css/" target="_blank" class="especial">Canal do Curso</a></p>
+    <p>Saiba mais em <a href="#" target="_blank" class="especial seta">W3C</a></p>
+</div>
+
+</body>
+</html>

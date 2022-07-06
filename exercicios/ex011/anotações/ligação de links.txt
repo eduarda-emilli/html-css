@@ -1,0 +1,9 @@
+
+
+target="" _blanck: abre em outra aba
+target="" _self: abre na mesma aba
+
+rel="" <<-- next ou prev
+
+next: indica que outra aba será aberta
+prev: indica que voltará para aba anterior
